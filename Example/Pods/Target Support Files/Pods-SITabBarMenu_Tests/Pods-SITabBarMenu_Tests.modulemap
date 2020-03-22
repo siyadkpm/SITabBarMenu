@@ -1,0 +1,6 @@
+framework module Pods_SITabBarMenu_Tests {
+  umbrella header "Pods-SITabBarMenu_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,16 @@
+PODS:
+  - SITabBarMenu (0.1.0)
+
+DEPENDENCIES:
+  - SITabBarMenu (from `../`)
+
+EXTERNAL SOURCES:
+  SITabBarMenu:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SITabBarMenu: 45bc75328b16425ec70bfdefe95b98e8763e20d2
+
+PODFILE CHECKSUM: 1fbdf06647cc1f0310d24a706c2efe833966cb99
+
+COCOAPODS: 1.9.1

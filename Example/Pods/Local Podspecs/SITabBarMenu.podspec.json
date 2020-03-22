@@ -1,0 +1,22 @@
+{
+  "name": "SITabBarMenu",
+  "version": "0.1.0",
+  "summary": "A short description of SITabBarMenu.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/siyadkpm/SITabBarMenu",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "siyadkpm": "siyadkpm@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/siyadkpm/SITabBarMenu.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "SITabBarMenu/Classes/**/*"
+}
