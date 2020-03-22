@@ -7,17 +7,17 @@
 
 import UIKit
 
-public class MenuCollCell: UICollectionViewCell {
+class MenuCollCell: UICollectionViewCell {
 
-     @IBOutlet public var bgView: UIView!
-     @IBOutlet  public weak var itemLabel: UILabel!
+     @IBOutlet var bgView: UIView!
+     @IBOutlet  weak var itemLabel: UILabel!
 
-     public var title : String!
-     public var tabItemButtonPressedBlock:(()-> Void)!
-     public var options: MenuOptions!
+     var title : String!
+     var tabItemButtonPressedBlock:(()-> Void)!
+     var options: MenuOptions!
 
 
-        override public func awakeFromNib() {
+        override func awakeFromNib() {
             super.awakeFromNib()
 
             options = MenuOptions.init()
@@ -25,11 +25,11 @@ public class MenuCollCell: UICollectionViewCell {
         }
 
         
-        public class func cellIdentifier() -> String {
+        class func cellIdentifier() -> String {
             return "MenuCollCell"
         }
         
-        public var isCurrent: Bool = false {
+        var isCurrent: Bool = false {
              didSet {
 
                  if isCurrent {
@@ -46,7 +46,7 @@ public class MenuCollCell: UICollectionViewCell {
 //MARK : Tab Creation
 extension MenuCollCell {
       
-        public func selectedTab() {
+        func selectedTab() {
             
             self.itemLabel?.font = options.font
             switch options.menuStyle {
@@ -69,7 +69,7 @@ extension MenuCollCell {
 
         }
 
-        public func unSelectedTab() {
+        func unSelectedTab() {
             
             self.itemLabel?.font = options.font
             switch options.menuStyle {
@@ -93,7 +93,7 @@ extension MenuCollCell {
         
     
         //MARK : Normal Tab Menu
-        public func normalMenuStyle(isSelect : Bool){
+        func normalMenuStyle(isSelect : Bool){
             
             self.bgView.layer.cornerRadius = CGFloat((options.menuHeight - 20) / 2)
             if(isSelect){
@@ -120,7 +120,7 @@ extension MenuCollCell {
         }
     
          //MARK : Oval Shaped Tab Menu
-        public func ovalMenuStyle(isSelect : Bool){
+        func ovalMenuStyle(isSelect : Bool){
             
             self.bgView.layer.cornerRadius = CGFloat((options.menuHeight - 20) / 2)
 
@@ -149,7 +149,7 @@ extension MenuCollCell {
         }
     
         //MARK : Square Shaped Tab Menu
-        public func squareMenuStyle(isSelect : Bool){
+        func squareMenuStyle(isSelect : Bool){
            
             self.bgView.layer.cornerRadius = 8.0
             if(isSelect){
@@ -176,7 +176,7 @@ extension MenuCollCell {
         }
         
         //MARK : Border with Oval Shaped Tab Menu
-        public func borderOvalMenuStyle(isSelect : Bool){
+        func borderOvalMenuStyle(isSelect : Bool){
             
             
             self.bgView.layer.cornerRadius = CGFloat((options.menuHeight - 20) / 2)
@@ -205,7 +205,7 @@ extension MenuCollCell {
         }
         
          //MARK : Border with Square Shaped Tab Menu
-        public func borderSquareMenuStyle(isSelect : Bool){
+        func borderSquareMenuStyle(isSelect : Bool){
             
             self.bgView.layer.cornerRadius = 8.0
             if(isSelect){
@@ -237,7 +237,7 @@ extension MenuCollCell {
     // MARK: - IBAction
 extension MenuCollCell {
     
-        @IBAction public func tabItemTouchUpInside(_ button: UIButton) {
+        @IBAction fileprivate func tabItemTouchUpInside(_ button: UIButton) {
            tabItemButtonPressedBlock?()
            
         }
