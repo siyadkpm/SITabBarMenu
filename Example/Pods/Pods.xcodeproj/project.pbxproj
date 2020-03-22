@@ -12,9 +12,13 @@
 		43BC2694B9F9A7CD37EA9A8F7EF96A6F /* SITabBarMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B2B4DAE823308972BBDA053BA5645BB1 /* SITabBarMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5C0F7F135EB4BB57450DEF0B21F343BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		60F0DE3538E65545895A86F77A5B341A /* SITabBarMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A910CE69A5BEEDCE754D32BAFAF288 /* SITabBarMenu-dummy.m */; };
-		8125D88D37FAF4163C7699078A3FF404 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3B55376785981D164BC418DE9B58D5 /* ReplaceMe.swift */; };
 		8DE8F5DDE1760AA2246D728748FD1632 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		9F22CC27492913EDAB157B0C8A078736 /* Pods-SITabBarMenu_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3914E624BF18ADB0B4A8D69BEF26D7D7 /* Pods-SITabBarMenu_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B11DAB9E242733E80025AB43 /* MenuOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11DAB9D242733E80025AB43 /* MenuOptions.swift */; };
+		B11DABA3242734820025AB43 /* SITabMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B11DAB9F242734820025AB43 /* SITabMenuView.xib */; };
+		B11DABA4242734820025AB43 /* MenuCollCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B11DABA0242734820025AB43 /* MenuCollCell.xib */; };
+		B11DABA5242734820025AB43 /* MenuCollCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11DABA1242734820025AB43 /* MenuCollCell.swift */; };
+		B11DABA6242734820025AB43 /* SITabMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11DABA2242734820025AB43 /* SITabMenuView.swift */; };
 		B4460F98FC5ABD33E72C4EBC4F334719 /* Pods-SITabBarMenu_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D3E1C65B805F62E8A9464153688E78 /* Pods-SITabBarMenu_Tests-dummy.m */; };
 		C0DF21EEA8946F1C3E8269117AF76F9F /* Pods-SITabBarMenu_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 64072FC40F949587585D4E3B46B0EF5D /* Pods-SITabBarMenu_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -39,34 +43,38 @@
 /* Begin PBXFileReference section */
 		0262F6945543E4C840BED2CBEEB5E037 /* Pods-SITabBarMenu_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SITabBarMenu_Example-Info.plist"; sourceTree = "<group>"; };
 		0300608424778DA517A66F38D2E9F909 /* Pods-SITabBarMenu_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SITabBarMenu_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		04A97235A63C509304661420B693F464 /* Pods_SITabBarMenu_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SITabBarMenu_Example.framework; path = "Pods-SITabBarMenu_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04A97235A63C509304661420B693F464 /* Pods_SITabBarMenu_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SITabBarMenu_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0768CD1347CF74DB8507D2D02A661680 /* Pods-SITabBarMenu_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SITabBarMenu_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		18D013472552D34F06C10044C60EAB8A /* Pods_SITabBarMenu_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SITabBarMenu_Tests.framework; path = "Pods-SITabBarMenu_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18D013472552D34F06C10044C60EAB8A /* Pods_SITabBarMenu_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SITabBarMenu_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D3623DE5055A73511E756042B7C9352 /* Pods-SITabBarMenu_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SITabBarMenu_Tests.modulemap"; sourceTree = "<group>"; };
 		1DFB0DEB82AF62117D1444F1620CC79D /* Pods-SITabBarMenu_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SITabBarMenu_Example-frameworks.sh"; sourceTree = "<group>"; };
 		232B15831F6866E750E14A9A2FE26566 /* SITabBarMenu-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SITabBarMenu-Info.plist"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		3914E624BF18ADB0B4A8D69BEF26D7D7 /* Pods-SITabBarMenu_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SITabBarMenu_Example-umbrella.h"; sourceTree = "<group>"; };
 		64072FC40F949587585D4E3B46B0EF5D /* Pods-SITabBarMenu_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SITabBarMenu_Tests-umbrella.h"; sourceTree = "<group>"; };
-		6C3B55376785981D164BC418DE9B58D5 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = SITabBarMenu/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		6D9EFC5F201FA531D100C6604D04ADBA /* SITabBarMenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SITabBarMenu.release.xcconfig; sourceTree = "<group>"; };
 		7D08DA3ACF609F0DC01AAA7899FBE9C9 /* Pods-SITabBarMenu_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SITabBarMenu_Example-dummy.m"; sourceTree = "<group>"; };
-		8CFA5827FD056C6E4A2F2FB3D051591D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		8CFA5827FD056C6E4A2F2FB3D051591D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8D9FA31DA3D8C38A23345FDE93F6266A /* Pods-SITabBarMenu_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SITabBarMenu_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		8EF5EE06A76D432CC9F28EFB5F88B526 /* Pods-SITabBarMenu_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SITabBarMenu_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		90C819FBF1DA3E37F277396662DE32BF /* Pods-SITabBarMenu_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SITabBarMenu_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		91A910CE69A5BEEDCE754D32BAFAF288 /* SITabBarMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SITabBarMenu-dummy.m"; sourceTree = "<group>"; };
-		933E6B0A318C17970EEE76DD4333E0DF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		933E6B0A318C17970EEE76DD4333E0DF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		94FC4C6A9BECA8A17228F06B28718E4D /* Pods-SITabBarMenu_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SITabBarMenu_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		98DB3D5642709B4753E2343A4CF2C4A5 /* Pods-SITabBarMenu_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SITabBarMenu_Example.modulemap"; sourceTree = "<group>"; };
 		9BCD389466A7BAC7D82633F129AF3866 /* Pods-SITabBarMenu_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SITabBarMenu_Tests-Info.plist"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AC189C2CFE7A61010F1F2488FB9F111D /* Pods-SITabBarMenu_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SITabBarMenu_Example.release.xcconfig"; sourceTree = "<group>"; };
+		B11DAB9D242733E80025AB43 /* MenuOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MenuOptions.swift; path = SITabBarMenu/Classes/MenuOptions.swift; sourceTree = "<group>"; };
+		B11DAB9F242734820025AB43 /* SITabMenuView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SITabMenuView.xib; path = SITabBarMenu/Classes/SITabMenuView.xib; sourceTree = "<group>"; };
+		B11DABA0242734820025AB43 /* MenuCollCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MenuCollCell.xib; path = SITabBarMenu/Classes/MenuCollCell.xib; sourceTree = "<group>"; };
+		B11DABA1242734820025AB43 /* MenuCollCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuCollCell.swift; path = SITabBarMenu/Classes/MenuCollCell.swift; sourceTree = "<group>"; };
+		B11DABA2242734820025AB43 /* SITabMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SITabMenuView.swift; path = SITabBarMenu/Classes/SITabMenuView.swift; sourceTree = "<group>"; };
 		B2B4DAE823308972BBDA053BA5645BB1 /* SITabBarMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SITabBarMenu-umbrella.h"; sourceTree = "<group>"; };
 		CB1C7C744F6912F100C707DE749DA98A /* Pods-SITabBarMenu_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SITabBarMenu_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		E996EC7A7A8FDAF267C106B5C90B8CCD /* SITabBarMenu.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SITabBarMenu.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E996EC7A7A8FDAF267C106B5C90B8CCD /* SITabBarMenu.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = SITabBarMenu.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		EC3C94A820A7EF8357DD2CD44DA793DA /* SITabBarMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SITabBarMenu-prefix.pch"; sourceTree = "<group>"; };
-		F350F20869B6FBF12EC37319D282E765 /* SITabBarMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SITabBarMenu.framework; path = SITabBarMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F350F20869B6FBF12EC37319D282E765 /* SITabBarMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SITabBarMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5D3E1C65B805F62E8A9464153688E78 /* Pods-SITabBarMenu_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SITabBarMenu_Tests-dummy.m"; sourceTree = "<group>"; };
 		F6BECFC048BFF24CAE368CEF07E4F7FB /* SITabBarMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SITabBarMenu.modulemap; sourceTree = "<group>"; };
 		FACACDB1EC1003EBC90AB82BD99D1A91 /* SITabBarMenu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SITabBarMenu.debug.xcconfig; sourceTree = "<group>"; };
@@ -126,7 +134,11 @@
 		328B0A0CDBE810089A277368A6648B2A /* SITabBarMenu */ = {
 			isa = PBXGroup;
 			children = (
-				6C3B55376785981D164BC418DE9B58D5 /* ReplaceMe.swift */,
+				B11DABA1242734820025AB43 /* MenuCollCell.swift */,
+				B11DABA0242734820025AB43 /* MenuCollCell.xib */,
+				B11DABA2242734820025AB43 /* SITabMenuView.swift */,
+				B11DAB9F242734820025AB43 /* SITabMenuView.xib */,
+				B11DAB9D242733E80025AB43 /* MenuOptions.swift */,
 				4E42B8ADADFBA5264680D5E3C0D95A48 /* Pod */,
 				1080E04693FDC8E9F12EBFEC70A3AAFD /* Support Files */,
 			);
@@ -317,6 +329,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					F93D8EC6B5973E7919DCD503253E06A5 = {
+						LastSwiftMigration = 1130;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -343,6 +360,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B11DABA4242734820025AB43 /* MenuCollCell.xib in Resources */,
+				B11DABA3242734820025AB43 /* SITabMenuView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,8 +402,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8125D88D37FAF4163C7699078A3FF404 /* ReplaceMe.swift in Sources */,
+				B11DABA5242734820025AB43 /* MenuCollCell.swift in Sources */,
+				B11DABA6242734820025AB43 /* SITabMenuView.swift in Sources */,
 				60F0DE3538E65545895A86F77A5B341A /* SITabBarMenu-dummy.m in Sources */,
+				B11DAB9E242733E80025AB43 /* MenuOptions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,8 +543,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -632,6 +652,7 @@
 			baseConfigurationReference = 0300608424778DA517A66F38D2E9F909 /* Pods-SITabBarMenu_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -654,6 +675,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -665,6 +688,7 @@
 			baseConfigurationReference = AC189C2CFE7A61010F1F2488FB9F111D /* Pods-SITabBarMenu_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -687,6 +711,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
