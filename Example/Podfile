@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SITabBarMenu_Example' do
+  pod 'SITabBarMenu', :path => '../'
+
+  target 'SITabBarMenu_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
