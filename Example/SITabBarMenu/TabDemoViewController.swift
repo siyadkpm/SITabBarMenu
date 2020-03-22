@@ -1,9 +1,9 @@
 //
 //  TabDemoViewController.swift
-//  DemoSIYATabBar
+//  SITabBarMenu
 //
-//  Created by SIYAD Kunju on 20/03/20.
-//  Copyright © 2020 SIYAD. All rights reserved.
+//  Created by siyadkpm on 03/22/2020.
+//  Copyright (c) 2020 siyadkpm. All rights reserved.
 //
 
 import UIKit

@@ -22,7 +22,7 @@ SITabBarMenu is helped to implements Custom tab bar to your iOS Project easily.T
                        DESC
 
   s.homepage         = 'https://github.com/siyadkpm/SITabBarMenu'
-  s.screenshots     = 'https://pasteboard.co/J0eTG4c.png','https://pasteboard.co/J0eTZxs.png','https://pasteboard.co/J0eUgLO.png','https://pasteboard.co/J0eUrDv.png'
+  # s.screenshots     = 'https://pasteboard.co/J0eTG4c.png','https://pasteboard.co/J0eTZxs.png','https://pasteboard.co/J0eUgLO.png','https://pasteboard.co/J0eUrDv.png'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'siyadkpm' => 'siyadkpm@gmail.com' }
   s.source           = { :git => 'https://github.com/siyadkpm/SITabBarMenu.git', :tag => '0.1.0' }
